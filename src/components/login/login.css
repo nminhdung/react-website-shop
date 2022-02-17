@@ -1,0 +1,138 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  transition: var(--transition);
+  visibility: hidden;
+  transform: scale(0);
+}
+.form {
+  background: var(--clr-white);
+  width: 100%;
+  height: 100%;
+  padding: 6rem 4rem;
+  position: relative;
+}
+.modal-overlay.show {
+  z-index: 2;
+  visibility: visible;
+  transform: scale(1);
+}
+.form-title {
+  font-size: 2.4rem;
+  color: var(--clr-primary-2);
+  font-weight: 400;
+}
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:1rem;
+}
+.form-icon {
+  font-size: 2.4rem;
+  color: red;
+  cursor: pointer;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-checkbox{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.form-label {
+  font-size: 1.6rem;
+  color: var(--clr-black);
+  margin: 1.2rem 0;
+  text-transform: capitalize;
+}
+.form-label.lblCheckbox{
+  font-size:1.2rem;
+  color:var(--clr-black);
+  margin-left:1rem;
+}
+.login-input {
+  padding: 1rem 1.2rem;
+  outline: none;
+  border-radius: var(--radius);
+}
+.form-btn {
+  margin-top: 1.8rem;
+}
+.form-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-btn-login {
+  padding: 1.2rem 1.4rem;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: linear-gradient(to left, var(--clr-primary), rgb(236, 188, 31));
+  color: white;
+  width: 100%;
+}
+.title-register {
+  margin: 1.2rem 0;
+  font-size: 1.4rem;
+  text-align: right;
+}
+.text-register {
+  color: var(--clr-primary-2);
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.login-link {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.link-facebook {
+  background: rgb(8, 8, 119);
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.login-link-fb,
+.login-link-gg {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+.link-text {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 400;
+}
+.link-google {
+  background: #da1818;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 1.8rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .form {
+    width: 70rem;
+    height: 60rem;
+  }
+}

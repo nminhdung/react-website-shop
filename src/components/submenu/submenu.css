@@ -1,0 +1,45 @@
+.list-submenu {
+  position: absolute;
+  background: var(--clr-white);
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  display: none;
+}
+.list-submenu-item {
+  color: var(--clr-black);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 800px) {
+  .list-submenu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid var(--clr-white);
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .list-submenu.show {
+    display: block;
+  }
+  .list-submenu-item {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    transition: var(--transition);
+  }
+  .list-submenu-item:hover {
+    color: var(--clr-primary-2);
+  }
+}
