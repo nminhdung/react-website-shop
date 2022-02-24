@@ -92,7 +92,7 @@ nav {
 }
 .cart-icon {
   font-size: 4.2rem;
-  color: var(--clr-primary-2);
+  color: rgb(81, 247, 81);
   border-color: transparent;
   background: transparent;
 }

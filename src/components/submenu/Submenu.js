@@ -3,14 +3,14 @@ import "./submenu.css";
 import "../../index.css";
 import { useGlobalContext } from "../../context";
 function Submenu() {
-    const {isOpenSubmenu,location,openSubmenu} = useGlobalContext();
+    const {isOpenSubmenu,location,openSubmenu,closeSubmenu} = useGlobalContext();
     const refListSub = useRef(null)
     useEffect(()=>{
         const submenu = refListSub.current;
         submenu.style.left=`${location}px`;
     },[location])
     return (
-        <ul className={`${isOpenSubmenu ? 'list-submenu show':'list-submenu'}`} onMouseOver={openSubmenu} ref={refListSub}>
+        <ul className={`${isOpenSubmenu ? 'list-submenu show':'list-submenu'}`} onMouseOver={openSubmenu} onMouseOut={closeSubmenu} ref={refListSub}>
             <li>
                 <a href="/" className='list-submenu-item'>HamBurger</a>
             </li>

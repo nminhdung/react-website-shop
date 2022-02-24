@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import {useGlobalContext} from "../../context";
+import { useGlobalContext } from "../../context";
 // import { sliders } from "../../data";
 import "./slider.css";
 import "../../index.css";
 
 function Slider() {
-  const {closeSubmenu} = useGlobalContext();
+  const { closeSubmenu } = useGlobalContext();
   const [index, setIndex] = useState(0);
-   const {sliders} =useGlobalContext();
+  const { sliders } = useGlobalContext();
 
   const prevClick = () => {
     setIndex((index) => {
@@ -37,9 +37,9 @@ function Slider() {
     if (index < 0) {
       setIndex(lastIndex);
     }
-  }, [index,sliders.length]);
+  }, [index, sliders.length]);
   return (
-    <section className="sliders grid " onMouseOver={()=>closeSubmenu()}>
+    <section className="sliders grid ">
       {sliders.map((slide, slideIndex) => {
         let position = "nextSlide";
         if (slideIndex === index) {
@@ -52,7 +52,7 @@ function Slider() {
             position = "lastSlide";
           }
         }
-        
+
         return (
           <article key={slideIndex} className={`${position} slider-item`}>
             <img className="slider-img" src={slide.image} alt="slide" />
@@ -60,10 +60,14 @@ function Slider() {
         );
       })}
       <ul className="list-dot">
-        {sliders.map((item,indexDot)=>{
+        {sliders.map((item, indexDot) => {
           return (
-            <li key={indexDot} onClick={()=>setIndex(indexDot)} className={`dot-item ${index===indexDot ? 'dot-active':''}`}></li>
-          )
+            <li
+              key={indexDot}
+              onClick={() => setIndex(indexDot)}
+              className={`dot-item ${index === indexDot ? "dot-active" : ""}`}
+            ></li>
+          );
         })}
       </ul>
       <button className="prevBtn" onClick={prevClick}>

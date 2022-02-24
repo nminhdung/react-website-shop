@@ -2,13 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../index.css";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
+import {Link} from "react-router-dom";
 const logo = "./images/logo.png";
 function Navbar() {
   const {openSubmenu,isOpenSubmenu,closeSubmenu,setOpenFormLogin} = useGlobalContext();
 
   //display submenu 
- 
-
   const displaySubmenu = (e)=>{
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left+tempBtn.right)/2;
@@ -44,10 +43,10 @@ function Navbar() {
         <section className="navbar-center">
           <div className="nav-left">
             <img className="logo" src={logo} alt="logo" />
-            <span className="nav-title">
+            <Link to="/" className="nav-title">
               Fast <br />
               Food
-            </span>
+            </Link>
             <button
               className="nav-toggle"
               onClick={() => setShowLinks(!showLinks)}
