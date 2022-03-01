@@ -5,9 +5,8 @@ import "./slider.css";
 import "../../index.css";
 
 function Slider() {
-  const { closeSubmenu } = useGlobalContext();
+  const { closeSubmenu,sliders } = useGlobalContext();
   const [index, setIndex] = useState(0);
-  const { sliders } = useGlobalContext();
 
   const prevClick = () => {
     setIndex((index) => {

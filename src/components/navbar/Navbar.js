@@ -2,17 +2,18 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../index.css";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 const logo = "./images/logo.png";
 function Navbar() {
-  const {openSubmenu,isOpenSubmenu,closeSubmenu,setOpenFormLogin} = useGlobalContext();
+  const { openSubmenu, isOpenSubmenu, closeSubmenu, setOpenFormLogin } =
+    useGlobalContext();
 
-  //display submenu 
-  const displaySubmenu = (e)=>{
+  //display submenu
+  const displaySubmenu = (e) => {
     const tempBtn = e.target.getBoundingClientRect();
-    const center = (tempBtn.left+tempBtn.right)/2;
-    openSubmenu(center)
-  }
+    const center = (tempBtn.left + tempBtn.right) / 2;
+    openSubmenu(center);
+  };
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains("link-item")) {
       closeSubmenu();
@@ -24,7 +25,7 @@ function Navbar() {
   const linksRef = useRef(null);
   const refCart = useRef(null);
   const navRight = useRef(null);
-  
+
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     const refCartHeight = refCart.current.getBoundingClientRect().height;
@@ -55,7 +56,7 @@ function Navbar() {
             </button>
           </div>
           <div className="links-contaner" ref={linksContainerRef}>
-            <ul className="links" ref={linksRef}  >
+            <ul className="links" ref={linksRef}>
               <li>
                 <a href="/" className="link-item">
                   {" "}
@@ -63,20 +64,31 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/" className="link-item" onMouseOver={(e)=>displaySubmenu(e)}>
+                <a
+                  href="/"
+                  className="link-item"
+                  onMouseOver={(e) => displaySubmenu(e)}
+                >
                   {" "}
                   Giới Thiệu
                 </a>
               </li>
               <li>
-                <a href="/" className="link-item" onMouseOver={(e)=>displaySubmenu(e)} > 
+                <a
+                  href="/"
+                  className="link-item"
+                  onMouseOver={(e) => displaySubmenu(e)}
+                >
                   {" "}
                   Sản phẩm
-                 
                 </a>
               </li>
               <li>
-                <a href="/" className="link-item" onMouseOver={(e)=>displaySubmenu(e)}>
+                <a
+                  href="/"
+                  className="link-item"
+                  onMouseOver={(e) => displaySubmenu(e)}
+                >
                   {" "}
                   Liên hệ
                 </a>
@@ -92,12 +104,17 @@ function Navbar() {
           </div>
           <div className="nav-right" ref={navRight}>
             <div className="cart" ref={refCart}>
-              <i className="fas fa-shopping-bag cart-icon"></i>
+              <i className="fas fa-shopping-cart cart-icon"></i>
               <div className="amount-container">
                 <p className="total-amount">4</p>
               </div>
             </div>
-            <button className="btn-login" onClick={()=>setOpenFormLogin(true)}>Đăng Nhập</button>
+            <button
+              className="btn-login"
+              onClick={() => setOpenFormLogin(true)}
+            >
+              Đăng Nhập
+            </button>
           </div>
           {/* <div className="social-links">
             <ul className="list-social">
