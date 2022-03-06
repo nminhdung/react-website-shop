@@ -53,3 +53,9 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
 }
+.loading{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size:5rem;
+}

@@ -11,7 +11,6 @@ function Home() {
       <Slider />
       <Submenu />
       <Login />
-      <Categories />
       <FoodList />
     </>
   );

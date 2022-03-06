@@ -1,3 +1,22 @@
+.menu-container {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 120rem;
+}
+.title-our-menu {
+  color: #102a42;
+  font-size: 4rem;
+  letter-spacing: var(--spacing);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.underline {
+  background: var(--clr-primary-2);
+  width: 12rem;
+  height: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .food {
   background: var(--clr-white);
   padding: 1.2rem;
@@ -30,7 +49,7 @@
 }
 .food-price {
   color: var(--clr-primary-2);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .food-category {
   font-size: 1.6rem;
@@ -46,10 +65,43 @@
   border-radius: var(--radius);
   letter-spacing: var(--spacing);
   font-size: 1.6rem;
+  color: var(--clr-white);
   border-color: transparent transparent transparent;
   cursor: pointer;
-  transition:var(--transition);
+  transition: var(--transition);
 }
-.food-btn:hover{
-    color:var(--clr-white);
+.food-btn:hover {
+  color: var(--clr-black);
+  background: var(--clr-primary);
+}
+/*pagination*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  align-items: center;
+}
+.pagination-icon-prev,
+.pagination-icon-next {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-black);
+}
+.pagination-icon-prev{
+  margin-right:2rem;
+}
+.page-btn {
+  border: none;
+  background: transparent;
+  padding:0.8rem 2rem;
+  border-radius: var(--radius);
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor:pointer;
+}
+.active-page {
+  color: var(--clr-white);
+  background:var(--clr-primary-2);
 }
