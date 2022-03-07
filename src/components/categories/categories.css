@@ -27,6 +27,8 @@
   display: flex;
 }
 .category-item-link {
+  border:none;
+  background-color:transparent;
   display: block;
   padding: 2rem;
   font-size: 2rem;

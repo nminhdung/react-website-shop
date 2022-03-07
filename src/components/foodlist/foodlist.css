@@ -19,7 +19,7 @@
 }
 .food {
   background: var(--clr-white);
-  padding: 1.2rem;
+  
   box-shadow: var(--light-shadow);
   margin-top: 3.2rem;
   transition: var(--transition);
@@ -31,15 +31,18 @@
 .food-img {
   height: 36rem;
   object-fit: cover;
-  width: 100%;
+  width:100%;
   cursor: pointer;
 }
-.food-info {
+.food-description{
   margin-top: 1.2rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+}
+.food-info{
+  padding:1.2rem;
 }
 .food-title {
   font-size: 1.8rem;
@@ -104,4 +107,9 @@
 .active-page {
   color: var(--clr-white);
   background:var(--clr-primary-2);
+}
+@media (max-width:820px) {
+  .food-img{
+    object-fit:contain;
+  }
 }

@@ -15,9 +15,9 @@ function Categories() {
           {categories.map((category, index) => {
             return (
               <li key={index} className="category-item">
-                <a href="/" className="category-item-link" onClick={()=>filterCategory(category)}>
+                <button  className="category-item-link" onClick={()=>filterCategory(category)}>
                   {category}
-                </a>
+                </button>
               </li>
             );
           })}

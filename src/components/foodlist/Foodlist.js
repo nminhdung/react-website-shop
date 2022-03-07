@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./foodlist.css";
 import "../../index.css";
-import {usePaginate} from "../../utils";
+import { usePaginate } from "../../utils";
 import { useGlobalContext } from "../../context";
 
 function FoodList() {
   const { data } = useGlobalContext();
   const [foods, setFoods] = useState([]);
   const foodPaginate = usePaginate(data);
-  const [loadingFood, setLoadingFood] = useState(true);
+  const [loadingFood, setLoadingFood] = useState(false);
   const [pageIndex, setPageIndex] = useState(0);
   useEffect(() => {
     setLoadingFood(false);
@@ -38,26 +38,30 @@ function FoodList() {
   if (loadingFood) {
     return <div className="loading">Loading....</div>;
   }
+  console.log(foods);
+
   return (
     <>
       <div className="menu-container">
         <h2 className="title-our-menu">Our Menu</h2>
         <div className="underline"></div>
       </div>
-      <section className="food-list grid wide">
+      <section className="food-list grid wide ">
         <div className="row">
           {foods.map((food) => {
             const { id, img, title, price, category } = food;
             return (
-              <article key={id} className="col l-4 m-4 c-12">
+              <article key={id} className="col l-4 m-6 c-12">
                 <div className="food">
                   <img src={img} className="food-img" alt={title} />
                   <div className="food-info">
-                    <h1 className="food-title">{title}</h1>
-                    <p className="food-price">{price}$</p>
+                    <div className="food-description">
+                      <h1 className="food-title">{title}</h1>
+                      <p className="food-price">{price}$</p>
+                    </div>
+                    <p className="food-category">{category}</p>
+                    <button className="food-btn">Xem chi tiết</button>
                   </div>
-                  <p className="food-category">{category}</p>
-                  <button className="food-btn">Xem chi tiết</button>
                 </div>
               </article>
             );

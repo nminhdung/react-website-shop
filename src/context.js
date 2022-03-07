@@ -5,21 +5,22 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [data, setData] = useState(products);
-  
+
   // categories
-  // const allCategories = [
-  //   "all",
-  //   ...new Set(products.map((item) => item.category)),
-  // ];
-  // const [categories, setCategories] = useState(allCategories);
-  // const filterCategory = (category) => {
-  //   if (category === "all") {
-  //     setData(products);
-  //     return;
-  //   }
-  //   const newFoodList = data.filter((item) => item.category === category);
-  //   setData(newFoodList);
-  // };
+  const allCategories = [
+    "all",
+    ...new Set(products.map((item) => item.category)),
+  ];
+  const [categories, setCategories] = useState(allCategories);
+  const filterCategory = (category) => {
+    if (category === "all") {
+      setData(products);
+      return;
+    }
+    const newItems = products.filter((item) => item.category === category);
+    setData(newItems);
+    console.log(category);
+  };
   //paginate product
   // const foodPaginate = usePaginate(data);
   //menu
@@ -42,8 +43,9 @@ const AppProvider = ({ children }) => {
         // foodPaginate,
         isOpenSubmenu,
         location,
-        // categories,
+        categories,
         openFormLogin,
+        filterCategory,
         setOpenFormLogin,
         openSubmenu,
         closeSubmenu,
