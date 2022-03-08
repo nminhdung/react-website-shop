@@ -57,10 +57,12 @@ function FoodList() {
                   <div className="food-info">
                     <div className="food-description">
                       <h1 className="food-title">{title}</h1>
+                      <p className="food-category">{category}</p>
                       <p className="food-price">{price}$</p>
                     </div>
-                    <p className="food-category">{category}</p>
-                    <button className="food-btn">Xem chi tiết</button>
+                    <div className="food-footer">
+                      <button className="food-btn">Xem chi tiết</button>
+                    </div>
                   </div>
                 </div>
               </article>

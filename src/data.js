@@ -127,10 +127,10 @@ export const products = [
   },
   {
     id: 12,
-    title: "Bánh Hamburger 2 tầng",
+    title: "Bánh Sandwich Jambong",
     category: "breakfast",
     price: 13.99,
-    img: "./images/item-5.jpeg",
+    img: "./images/item-5.png",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
     ingradients: ["Bột mì", "Sữa", "Kem", "Phô mai"],
     amount: 1,
@@ -150,7 +150,7 @@ export const products = [
     title: "Bánh Hamburger Sốt tiêu",
     category: "breakfast",
     price: 20.99,
-    img: "./images/item-2.jpeg",
+    img: "./images/item-2.png",
     desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
     ingradients: ["Bột mì", "Thịt heo", "Rau salad", "Phô mai"],
     amount: 1,
@@ -177,10 +177,10 @@ export const products = [
   },
   {
     id: 17,
-    title: "Bánh Hamburger Trứng Bacon",
+    title: "Bánh Hamburger Cheese",
     category: "breakfast",
     price: 10.99,
-    img: "./images/item-7.jpeg",
+    img: "./images/item-7.png",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
     ingradients: ["Bột mì", "Nấm", "Ô liu","Xúc xích", "Phô mai"],
     amount: 1,
@@ -316,3 +316,18 @@ export const products = [
     amount: 1,
   },
 ];
+
+export const banners=[
+  {
+    id:1,
+    image: "./images/banner1.jpg",
+  },
+  {
+    id:2,
+    image: "./images/banner2.png",
+  },
+  {
+    id:3,
+    image: "./images/banner3.jpg",
+  }
+]
