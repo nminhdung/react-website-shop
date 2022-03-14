@@ -19,36 +19,25 @@ const AppProvider = ({ children }) => {
     }
     const newItems = products.filter((item) => item.category === category);
     setData(newItems);
-    console.log(category);
   };
   //paginate product
-  // const foodPaginate = usePaginate(data);
+  // const foodPaginate = usePaginate(data)
   //menu
-  const [isOpenSubmenu, setIsOpenSubmenu] = useState(false);
-  const [location, setLocation] = useState(null);
+
   //form
   const [openFormLogin, setOpenFormLogin] = useState(false);
-  const openSubmenu = (location) => {
-    setLocation(location);
-    setIsOpenSubmenu(true);
-  };
-  const closeSubmenu = () => {
-    setIsOpenSubmenu(false);
-  };
+  
+ 
   return (
     <AppContext.Provider
       value={{
         sliders,
         data,
-        // foodPaginate,
-        isOpenSubmenu,
-        location,
         categories,
         openFormLogin,
         filterCategory,
         setOpenFormLogin,
-        openSubmenu,
-        closeSubmenu,
+      
       }}
     >
       {children}

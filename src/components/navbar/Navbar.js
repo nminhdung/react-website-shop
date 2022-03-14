@@ -5,20 +5,10 @@ import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 const logo = "./images/logo.png";
 function Navbar() {
-  const { openSubmenu, isOpenSubmenu, closeSubmenu, setOpenFormLogin } =
+  const { setOpenFormLogin } =
     useGlobalContext();
 
-  //display submenu
-  const displaySubmenu = (e) => {
-    const tempBtn = e.target.getBoundingClientRect();
-    const center = (tempBtn.left + tempBtn.right) / 2;
-    openSubmenu(center);
-  };
-  const handleSubmenu = (e) => {
-    if (!e.target.classList.contains("link-item")) {
-      closeSubmenu();
-    }
-  };
+ 
   //menu mobile
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
@@ -40,7 +30,7 @@ function Navbar() {
   //end menu mobile
   return (
     <>
-      <nav onMouseOver={handleSubmenu}>
+      <nav>
         <section className="navbar-center">
           <div className="nav-left">
             <img className="logo" src={logo} alt="logo" />
@@ -67,7 +57,7 @@ function Navbar() {
                 <a
                   href="/"
                   className="link-item"
-                  onMouseOver={(e) => displaySubmenu(e)}
+                  
                 >
                   {" "}
                   Giới Thiệu
@@ -77,7 +67,7 @@ function Navbar() {
                 <a
                   href="/"
                   className="link-item"
-                  onMouseOver={(e) => displaySubmenu(e)}
+                 
                 >
                   {" "}
                   Sản phẩm
@@ -87,7 +77,7 @@ function Navbar() {
                 <a
                   href="/"
                   className="link-item"
-                  onMouseOver={(e) => displaySubmenu(e)}
+                 
                 >
                   {" "}
                   Liên hệ

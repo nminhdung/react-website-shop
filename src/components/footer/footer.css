@@ -11,6 +11,10 @@
   margin-bottom: 1.4rem;
   font-size: 2rem;
 }
+.footer-item_link-about,.footer-item_link-contact{
+  display:flex;
+  align-items: center;
+}
 .footer-item_link-about {
   margin-bottom: 0.8rem;
 }

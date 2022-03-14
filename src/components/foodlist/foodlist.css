@@ -36,14 +36,15 @@
   object-fit: contain;
   width: 100%;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .food-description {
   margin-top: 1.2rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
-  flex: 1;  
+  margin-bottom: 2rem;
+  
 }
 .food-info {
   padding: 1.2rem;
@@ -53,6 +54,7 @@
   text-transform: capitalize;
   color: var(--clr-black);
   letter-spacing: var(--spacing);
+  line-height: 2.2rem
 }
 .food-price {
   color: var(--clr-primary-2);
@@ -67,10 +69,11 @@
   margin:0.8rem 0;
 }
 .food-footer{
-  flex:1;
+  flex-shrink:0;
+  margin-top:auto;
 }
 .food-btn {
-  margin: 1rem auto;
+  
   background: var(--clr-primary-2);
   padding: 0.8rem 1.2rem;
   border-radius: var(--radius);
@@ -80,6 +83,7 @@
   border-color: transparent transparent transparent;
   cursor: pointer;
   transition: var(--transition);
+  
 }
 .food-btn:hover {
   color: var(--clr-black);

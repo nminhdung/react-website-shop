@@ -90,7 +90,7 @@ function Footer() {
                 <h1 className="footer-item_title">Fanpage</h1>
                 <ul className="footer-item_list">
                   <li className="footer-item_link-contact">
-                    <i class="fab fa-facebook footer-item_link-icon"></i>
+                    <i className="fab fa-facebook footer-item_link-icon"></i>
                     <a
                       href="https://www.facebook.com"
                       className="footer-item-text"

@@ -3,6 +3,7 @@ import "./foodlist.css";
 import "../../index.css";
 import { usePaginate } from "../../utils";
 import { useGlobalContext } from "../../context";
+import {Link} from "react-router-dom";
 
 function FoodList() {
   const { data } = useGlobalContext();
@@ -38,7 +39,7 @@ function FoodList() {
   if (loadingFood) {
     return <div className="loading">Loading....</div>;
   }
-  console.log(foods);
+
 
   return (
     <>
@@ -61,7 +62,7 @@ function FoodList() {
                       <p className="food-price">{price}$</p>
                     </div>
                     <div className="food-footer">
-                      <button className="food-btn">Xem chi tiết</button>
+                      <Link to={`/product/${id}`} className="food-btn">Xem chi tiết</Link>
                     </div>
                   </div>
                 </div>
