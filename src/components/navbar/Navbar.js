@@ -3,12 +3,10 @@ import "../../index.css";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
-const logo = "./images/logo.png";
+const logo = "/images/logo.png";
 function Navbar() {
-  const { setOpenFormLogin } =
-    useGlobalContext();
+  const { setOpenFormLogin } = useGlobalContext();
 
- 
   //menu mobile
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
@@ -33,7 +31,9 @@ function Navbar() {
       <nav>
         <section className="navbar-center">
           <div className="nav-left">
-            <img className="logo" src={logo} alt="logo" />
+            <Link to="/">
+              <img className="logo" src={logo} alt="logo" />
+            </Link>
             <Link to="/" className="nav-title">
               Fast <br />
               Food
@@ -54,31 +54,19 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="link-item"
-                  
-                >
+                <a href="/" className="link-item">
                   {" "}
                   Giới Thiệu
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="link-item"
-                 
-                >
+                <a href="/" className="link-item">
                   {" "}
                   Sản phẩm
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="link-item"
-                 
-                >
+                <a href="/" className="link-item">
                   {" "}
                   Liên hệ
                 </a>

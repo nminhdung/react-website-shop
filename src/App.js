@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import Error from "./pages/Error";
 import ProductDetail from "./pages/productDetail/ProductDetail";
+import Login from "./components/login/Login";
 import Footer from "./components/footer/Footer";
 function App() {
   return (
     <Router>
     <Navbar/>
+    <Login/>
       <Switch>
         <Route path="/" exact >
           <Home />

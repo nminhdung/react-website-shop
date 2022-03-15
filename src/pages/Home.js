@@ -13,7 +13,6 @@ function Home() {
       <Login />
       <Banner/>
       <FoodList />
-      <Footer/>
     </>
   );
 }

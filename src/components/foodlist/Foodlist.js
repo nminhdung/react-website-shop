@@ -3,7 +3,7 @@ import "./foodlist.css";
 import "../../index.css";
 import { usePaginate } from "../../utils";
 import { useGlobalContext } from "../../context";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function FoodList() {
   const { data } = useGlobalContext();
@@ -40,7 +40,6 @@ function FoodList() {
     return <div className="loading">Loading....</div>;
   }
 
-
   return (
     <>
       <div className="menu-container">
@@ -53,19 +52,23 @@ function FoodList() {
             const { id, img, title, price, category } = food;
             return (
               <article key={id} className="col l-4 m-6 c-12">
-                <div className="food">
-                  <img src={img} className="food-img" alt={title} />
-                  <div className="food-info">
-                    <div className="food-description">
-                      <h1 className="food-title">{title}</h1>
-                      <p className="food-category">{category}</p>
-                      <p className="food-price">{price}$</p>
-                    </div>
-                    <div className="food-footer">
-                      <Link to={`/product/${id}`} className="food-btn">Xem chi tiết</Link>
+                <Link to={`/product/${id}`}>
+                  <div className="food">
+                    <img src={img} className="food-img" alt={title} />
+                    <div className="food-info">
+                      <div className="food-description">
+                        <h1 className="food-title">{title}</h1>
+                        <p className="food-category">{category}</p>
+                        <p className="food-price">{price}$</p>
+                      </div>
+                      <div className="food-footer">
+                        <Link to={`/product/${id}`} className="food-btn">
+                          Xem chi tiết
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </article>
             );
           })}

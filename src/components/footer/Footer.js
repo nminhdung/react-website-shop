@@ -108,7 +108,7 @@ function Footer() {
                     </a>
                   </li>
                   <li className="footer-item_link-contact">
-                    <i class="fab fa-twitter footer-item_link-icon"></i>
+                    <i className="fab fa-twitter footer-item_link-icon"></i>
                     <a
                       href="https://www.Twitter.com"
                       className="footer-item-text"
