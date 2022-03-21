@@ -52,9 +52,11 @@ function FoodList() {
             const { id, img, title, price, category } = food;
             return (
               <article key={id} className="col l-4 m-6 c-12">
-                <Link to={`/product/${id}`}>
+               
                   <div className="food">
+                  <Link to={`/product/${id}`}>
                     <img src={img} className="food-img" alt={title} />
+                    </Link>
                     <div className="food-info">
                       <div className="food-description">
                         <h1 className="food-title">{title}</h1>
@@ -67,8 +69,9 @@ function FoodList() {
                         </Link>
                       </div>
                     </div>
+                   
                   </div>
-                </Link>
+              
               </article>
             );
           })}

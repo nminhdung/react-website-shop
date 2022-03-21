@@ -23,7 +23,8 @@ const AppProvider = ({ children }) => {
   //paginate product
   // const foodPaginate = usePaginate(data)
   //menu
-
+  //Cart
+  const [openCart,setOpenCart]= useState(false);
   //form
   const [openFormLogin, setOpenFormLogin] = useState(false);
   
@@ -37,7 +38,8 @@ const AppProvider = ({ children }) => {
         openFormLogin,
         filterCategory,
         setOpenFormLogin,
-      
+        openCart,
+        setOpenCart,
       }}
     >
       {children}

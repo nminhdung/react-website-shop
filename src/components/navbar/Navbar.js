@@ -5,7 +5,8 @@ import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 const logo = "/images/logo.png";
 function Navbar() {
-  const { setOpenFormLogin } = useGlobalContext();
+  const { setOpenFormLogin,setOpenCart } = useGlobalContext();
+  
 
   //menu mobile
   const [showLinks, setShowLinks] = useState(false);
@@ -81,8 +82,8 @@ function Navbar() {
             </ul>
           </div>
           <div className="nav-right" ref={navRight}>
-            <div className="cart" ref={refCart}>
-              <i className="fas fa-shopping-cart cart-icon"></i>
+            <div className="cart" ref={refCart} onClick={()=>setOpenCart(true)}>
+              <i className="fas fa-shopping-cart cart-icon" ></i>
               <div className="amount-container">
                 <p className="total-amount">4</p>
               </div>

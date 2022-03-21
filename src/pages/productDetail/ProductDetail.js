@@ -43,16 +43,20 @@ function ProductDetail() {
                     {desc.substring(0, 250)}...
                   </p>
                 </div>
+                <div className="product-ingradients">
+                  <p className="ingradients-title">Thành phần:</p>
+                  <p className="ingradients-item">{ingradients.map(item=>item+", ")}</p>
+                </div>
                 <div className="product-detail-amount">
                   <p className="product-detail-amount-title">Số lượng</p>
-                  <i className="fas fa-minus amount-icon"></i>
+                  <i className="fas fa-minus amount-icon" onClick={(e)=>setSingleItem({...singleItem,amount:singleItem.amount-1})}></i>
                   <input
                     type="number"
                     value={amount}
-                    onChange={(e) => console.log(e)}
+                    onChange={(e) => setSingleItem({...singleItem,amount:e.target.value})}
                     className="product-detail-input"
                   />
-                  <i className="fas fa-plus amount-icon"></i>
+                  <i className="fas fa-plus amount-icon" onClick={(e)=>setSingleItem({...singleItem,amount:singleItem.amount+1})}></i>
                 </div>
                 <div className="product-detail-btn">
                   <a className="btn-addcart">Thêm vào giỏ hàng</a>
