@@ -28,7 +28,13 @@ export const reducerCart = (state, action) => {
         (item) => item.id === action.payload.id
       );
       if (oldItem) {
-        oldItem.amount += action.payload.amount;
+        const newCart = state.cartList.map((item)=>{
+            if(item.id===oldItem.id) {
+                return {...oldItem,amount:oldItem.amount+action.payload.amount}
+            }
+        })
+        return {...state,cartList:newCart}
+        
        
       } else {
         const newCart = [...state.cartList, action.payload];
