@@ -1,6 +1,5 @@
 import React from "react";
 import "./register.css";
-import "../../index.css";
 function Register({ typeForm, setTypeForm, setOpenFormLogin }) {
   const exitForm = () => {
     setTypeForm({type:'login'});

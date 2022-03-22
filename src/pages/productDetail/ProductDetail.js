@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../../context";
-import "../../index.css";
 import "./productdetail.css";
 import { Link } from "react-router-dom";
 function ProductDetail() {
-  const { data } = useGlobalContext();
+  const { data,addCart } = useGlobalContext();
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [singleItem, setSingleItem] = useState(null);
@@ -59,7 +58,7 @@ function ProductDetail() {
                   <i className="fas fa-plus amount-icon" onClick={(e)=>setSingleItem({...singleItem,amount:singleItem.amount+1})}></i>
                 </div>
                 <div className="product-detail-btn">
-                  <a className="btn-addcart">Thêm vào giỏ hàng</a>
+                  <a className="btn-addcart" onClick={()=>addCart(singleItem)}>Thêm vào giỏ hàng</a>
                   <a className="btn-addcart">Mua ngay</a>
                 </div>
               </div>

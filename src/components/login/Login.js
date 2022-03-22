@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./login.css";
-import "../../index.css";
 import Register from "../register/Register";
 import { useGlobalContext } from "../../context";
 function Login() {

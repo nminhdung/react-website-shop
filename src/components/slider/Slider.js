@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "../../context";
 // import { sliders } from "../../data";
 import "./slider.css";
-import "../../index.css";
+
 
 function Slider() {
   const { closeSubmenu,sliders } = useGlobalContext();

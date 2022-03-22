@@ -1,6 +1,6 @@
 import React from "react";
 import "./categories.css";
-import "../../index.css";
+
 import { useGlobalContext } from "../../context";
 function Categories() {
   const { categories,filterCategory } = useGlobalContext();

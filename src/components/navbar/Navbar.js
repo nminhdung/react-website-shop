@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import "../../index.css";
+
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 const logo = "/images/logo.png";
 function Navbar() {
-  const { setOpenFormLogin,setOpenCart } = useGlobalContext();
+  const { setOpenFormLogin,setOpenCart,amount } = useGlobalContext();
   
 
   //menu mobile
@@ -85,7 +85,7 @@ function Navbar() {
             <div className="cart" ref={refCart} onClick={()=>setOpenCart(true)}>
               <i className="fas fa-shopping-cart cart-icon" ></i>
               <div className="amount-container">
-                <p className="total-amount">4</p>
+                <p className="total-amount">{amount}</p>
               </div>
             </div>
             <button

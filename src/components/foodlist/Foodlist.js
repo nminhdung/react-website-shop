@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./foodlist.css";
-import "../../index.css";
 import { usePaginate } from "../../utils";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";

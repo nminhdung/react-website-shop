@@ -96,6 +96,18 @@
   background: var(--clr-primary-2);
   font-weight: 600;
 }
+.clear-cart{
+  position: absolute;
+  width:100%;
+  padding:1rem;
+  border-radius: var(--radius);
+  font-size:1.8rem;
+  bottom:3.6rem;
+  text-align: center;
+  font-weight: 500;
+  cursor:pointer;
+  background:var(--clr-primary);
+}
 .cart-empty {
   position: absolute;
   top: 50%;
