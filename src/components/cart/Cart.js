@@ -29,6 +29,7 @@ function Cart() {
         <p className="cart-footer">Tổng cộng :{total}$</p>
       </div>
     </div>
+    /*test*/
   );
 }
 
