@@ -9,6 +9,7 @@ import { reducerCart } from "./Reducer/reducerCart";
 import { sliders, products } from "./data";
 import { usePaginate } from "./utils";
 const AppContext = React.createContext();
+const url = "https://localhost:44314/api/product/productlist";
 /*Cart state*/
 const initCart = {
   cartList: [],
@@ -17,7 +18,7 @@ const initCart = {
 };
 const AppProvider = ({ children }) => {
   const [data, setData] = useState(products);
-
+  const [testData,setTestData] = useState([]);
   // categories
   const allCategories = [
     "all",
@@ -32,6 +33,19 @@ const AppProvider = ({ children }) => {
     const newItems = products.filter((item) => item.category === category);
     setData(newItems);
   };
+  const fetchData = async()=>{
+    try{
+      const res = await fetch(url);
+      const data1 = await res.json();
+      setTestData(data1);
+    }
+    catch(err){
+      console.log("error")
+    }
+  }
+  useEffect(()=>{
+    fetchData();
+  },[])
   //paginate product
   // const foodPaginate = usePaginate(data)
   //menu
@@ -72,6 +86,7 @@ const AppProvider = ({ children }) => {
         remove,
         toggleAmount,
         clearAll,
+        testData
       }}
     >
       {children}

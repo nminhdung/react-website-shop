@@ -50,7 +50,7 @@ function FoodList() {
           {foods.map((food) => {
             const { id, img, title, price, category } = food;
             return (
-              <article key={id} className="col l-4 m-6 c-12">
+              <article key={id} className="col l-4 m-6 c-12" style={{marginTop:'3.2rem'}}>
                
                   <div className="food">
                   <Link to={`/product/${id}`}>
