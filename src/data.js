@@ -343,3 +343,47 @@ export const banners = [
     image: "/images/banner3.jpg",
   },
 ];
+
+export const navLinks = [
+  {
+    id: 1,
+    path: "/",
+    text: "Trang chủ",
+  },
+  {
+    id: 2,
+    path: "/about",
+    text: "Giới thiệu",
+  },
+  {
+    id: 3,
+    path: "/foodList",
+    text: "Sản phẩm",
+  },
+  {
+    id: 4,
+    path: "/contact",
+    text: "Liên hệ",
+  },
+];
+
+export const about = [
+  {
+    id: 1,
+    img: "/images/about3.jpg",
+    heading: "Gần Gũi",
+    text: "Chúng tôi có niềm tin vào tính gần gũi mà thanh liêm, nền tảng vững chắc cho một cuộc sống trung thực, bình dân và thành thật với bản thân.",
+  },
+  {
+    id: 2,
+    img: "/images/about4.jpg",
+    heading: "Vui Vẻ",
+    text: "Chúng tôi dễ gần, đáng yêu và tràn đầy năng lượng, luôn mang đến niềm vui cho những người xung quanh.",
+  },
+  {
+    id: 2,
+    img: "/images/about5.jpg",
+    heading: "Đồng Lòng",
+    text: "Chúng tôi thích tận hưởng thời gian bên nhau giống như tận hưởng việc mua sắm trực tuyến với người thân và bạn bè - làm những việc yêu thích cùng nhau như một đại gia đình lớn.",
+  },
+];

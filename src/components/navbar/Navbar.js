@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import {navLinks} from "../../data";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
@@ -48,37 +48,18 @@ function Navbar() {
           </div>
           <div className="links-contaner" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
-              <li>
-                <a href="/" className="link-item">
+              {navLinks.map((item)=>{
+                return (
+                  <li key={item.id}>
+                <Link to={item.path} className="link-item">
                   {" "}
-                  Trang chủ
-                </a>
+                  {item.text}
+                </Link>
               </li>
-              <li>
-                <a href="/" className="link-item">
-                  {" "}
-                  Giới Thiệu
-                </a>
-              </li>
-              <li>
-                <a href="/" className="link-item">
-                  {" "}
-                  Sản phẩm
-                </a>
-              </li>
-              <li>
-                <a href="/" className="link-item">
-                  {" "}
-                  Liên hệ
-                </a>
-              </li>
-              <li>
-                <a href="/" className="link-item">
-                  {" "}
-                  Tin tức
-                </a>
-              </li>
-              <li></li>
+                )        
+              })}
+           
+            
             </ul>
           </div>
           <div className="nav-right" ref={navRight}>

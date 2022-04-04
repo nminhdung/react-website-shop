@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
-
-
+import { navLinks } from "../../data";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -12,26 +12,15 @@ function Footer() {
               <div className="footer-item">
                 <h1 className="footer-item_title">Giới thiệu</h1>
                 <ul className="footer-item_list">
-                  <li className="footer-item_link-about">
-                    <a href="/" className="footer-item-text">
-                      Trang chủ
-                    </a>
-                  </li>
-                  <li className="footer-item_link-about">
-                    <a href="/" className="footer-item-text">
-                      Sản phẩm
-                    </a>
-                  </li>
-                  <li className="footer-item_link-about">
-                    <a href="/" className="footer-item-text">
-                      Tin tức{" "}
-                    </a>
-                  </li>
-                  <li className="footer-item_link-about">
-                    <a href="/" className="footer-item-text">
-                      Khuyến mãi
-                    </a>
-                  </li>
+                  {navLinks.map((item) => {
+                    return (
+                      <li key={item.id} className="footer-item_link-about">
+                        <Link to={item.path} className="footer-item-text">
+                          {item.text}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>

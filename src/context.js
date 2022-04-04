@@ -43,9 +43,9 @@ const AppProvider = ({ children }) => {
       console.log("error")
     }
   }
-  useEffect(()=>{
-    fetchData();
-  },[])
+  // useEffect(()=>{
+  //   fetchData();
+  // },[])
   //paginate product
   // const foodPaginate = usePaginate(data)
   //menu

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import Error from "./pages/Error";
 import ProductDetail from "./pages/productDetail/ProductDetail";
+import About from "./pages/about/About";
 import Login from "./components/login/Login";
 import Cart from "./components/cart/Cart";
 import Footer from "./components/footer/Footer";
@@ -18,11 +19,12 @@ function App() {
           <Home />
         </Route>
         <Route path="/about"  >
-          <Home />
+          <About/>
         </Route>
         <Route path="/product/:id">
           <ProductDetail/>
         </Route>
+
         <Route path="*"  >
           <Error/>
         </Route>

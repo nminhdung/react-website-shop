@@ -4,7 +4,7 @@
   /*primary*/
   --clr-primary: #c9e52d57;
   --clr-primary-2:rgb(241, 193, 33);
-  
+  --clr-text:#8c8e8f;
   /*grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
@@ -116,7 +116,6 @@ h4 {
   margin-top:auto;
 }
 .food-btn {
-  
   background: var(--clr-primary-2);
   padding: 0.8rem 1.2rem;
   border-radius: var(--radius);
@@ -126,7 +125,6 @@ h4 {
   border-color: transparent transparent transparent;
   cursor: pointer;
   transition: var(--transition);
-  
 }
 .food-btn:hover {
   color: var(--clr-black);

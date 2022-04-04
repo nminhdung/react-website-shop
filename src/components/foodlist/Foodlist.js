@@ -68,7 +68,7 @@ function FoodList() {
                         </Link>
                       </div>
                     </div>
-                   
+                    
                   </div>
               
               </article>
