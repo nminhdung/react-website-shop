@@ -56,7 +56,7 @@ function About() {
           <div className="row">
             {about.map((item) => {
               return (
-                <div className="col l-4 m-4 c-6">
+                <div key={item.id} className="col l-4 m-4 c-6">
                   <div className="about-content">
                     <img src={item.img} className="about-img" />
                     <h5 className="mid-heading">{item.heading}</h5>

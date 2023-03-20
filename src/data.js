@@ -123,10 +123,10 @@ export const products = [
   },
   {
     id: 11,
-    title: "Bánh Crepe Phô Mai",
+    title: "Gà rán hàn quốc",
     category: "dessert",
     price: 15.99,
-    img: "/images/cake-crepe.png",
+    img: "/images/Gà rán hàn quốc.jpeg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
     ingradients: ["Bột mì", "Sữa", "Kem", "Phô mai"],
     amount: 1,
@@ -143,10 +143,10 @@ export const products = [
   },
   {
     id: 13,
-    title: "Bánh Hamburger ",
+    title: "Bánh Taco ",
     category: "breakfast",
     price: 6.99,
-    img: "/images/Hamburger.png",
+    img: "/images/Bánh Taco.png",
     desc: `Bữa ăn sáng được coi là nguồn cung cấp năng lượng chính cho mỗi chúng ta, giúp hoạt động cả ngày. Vì vậy việc nạp đầy đủ năng lượng cho bữa ăn sáng là điều vô cùng cần thiết, đặc biệt là khi công việc bận rộn tất bật khiến chúng ta không có đủ thời gian chăm lo cho bữa sáng trọng vẹn. Hamburger được coi là sản phẩm đặc biệt với tiêu chí “ ngon-bổ-rẻ” đem đến cho khách hàng chất lượng tuyệt vời và an toàn cho sức khỏe.   Với nguồn năng lượng với hơn 1200 kcal dư sức cung cấp 120% nhu cầu năng lượng cho ngày làm việc. Hamburger được bổ sung thêm 9 loại vitamin và khoáng chất.. Bánh mì- món ăn rất quen thuộc đối với khẩu vị của mỗi người Việt và kết hợp với thịt bò đem lại hương vị đậm đà, ngon miệng. Hàm lượng dinh dưỡng trong 1 khẩu phần bánh mì bò là 760kcal.Kết hợp với rau xanh tươi nguyên từ cánh đồng tươi mát.
      `,
     ingradients: ["Bột mì", "Thịt bò", "Cà chua", "Phô mai"],
@@ -164,10 +164,10 @@ export const products = [
   },
   {
     id: 15,
-    title: "Pizz thập cẩm",
+    title: "Xúc xích nướng",
     category: "lunch",
     price: 22.99,
-    img: "/images/pizza-mix.png",
+    img: "/images/Xúc xích nướng.jpg",
     desc: `Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.
     Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C  `,
     ingradients: ["Bột mì", "Xúc xích", "Ớt chuông", "Phô mai"],
@@ -175,10 +175,10 @@ export const products = [
   },
   {
     id: 16,
-    title: "Pizza phô mai",
+    title: "Khoai tây chiên",
     category: "lunch",
     price: 18.99,
-    img: "/images/pizza-cheese.png",
+    img: "/images/Khoai tây chiên.jpg",
     desc: `Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.
     Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C `,
     ingradients: ["Bột mì", "Trứng", "Phô mai"],
@@ -246,12 +246,12 @@ export const products = [
   },
   {
     id: 23,
-    title: "Bánh Hamburger ",
+    title: "Bánh Donut",
     category: "breakfast",
     price: 6.99,
-    img: "/images/Hamburger.png",
+    img: "/images/Bánh Donut.jpg",
     desc: `Bữa ăn sáng được coi là nguồn cung cấp năng lượng chính cho mỗi chúng ta, giúp hoạt động cả ngày. Vì vậy việc nạp đầy đủ năng lượng cho bữa ăn sáng là điều vô cùng cần thiết, đặc biệt là khi công việc bận rộn tất bật khiến chúng ta không có đủ thời gian chăm lo cho bữa sáng trọng vẹn. Hamburger được coi là sản phẩm đặc biệt với tiêu chí “ ngon-bổ-rẻ” đem đến cho khách hàng chất lượng tuyệt vời và an toàn cho sức khỏe.   Với nguồn năng lượng với hơn 1200 kcal dư sức cung cấp 120% nhu cầu năng lượng cho ngày làm việc. Hamburger được bổ sung thêm 9 loại vitamin và khoáng chất.. Bánh mì- món ăn rất quen thuộc đối với khẩu vị của mỗi người Việt và kết hợp với thịt bò đem lại hương vị đậm đà, ngon miệng. Hàm lượng dinh dưỡng trong 1 khẩu phần bánh mì bò là 760kcal.Kết hợp với rau xanh tươi nguyên từ cánh đồng tươi mát.`,
-    ingradients: ["Bột mì", "Thịt bò", "Cà chua", "Phô mai"],
+    ingradients: ["Bột mì","Kem", "Phô mai"],
     amount: 1,
   },
   {
@@ -266,21 +266,21 @@ export const products = [
   },
   {
     id: 25,
-    title: "Pizz thập cẩm",
+    title: "Mỳ ý sốt bò bằm ",
     category: "lunch",
     price: 22.99,
-    img: "/images/pizza-mix.png",
+    img: "/images/sapaghetti.png",
     desc: `Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.
-    Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C  `,
+    Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những sợi mì thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C  `,
     ingradients: ["Bột mì", "Xúc xích", "Ớt chuông", "Phô mai"],
     amount: 1,
   },
   {
     id: 26,
-    title: "Pizza phô mai",
+    title: "Pizza xúc xích",
     category: "lunch",
     price: 18.99,
-    img: "/images/pizza-cheese.png",
+    img: "/images/Pizza xúc xích.jpg",
     desc: `Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.
     Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C `,
     ingradients: ["Bột mì", "Trứng", "Phô mai"],
@@ -288,21 +288,21 @@ export const products = [
   },
   {
     id: 27,
-    title: "Pizza Ô liu",
+    title: "Pizza sầu riêng",
     category: "lunch",
     price: 24.99,
-    img: "/images/pizza-oliu.png",
+    img: "/images/Pizza sầu riêng.png",
     desc: `Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.
     Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất. Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C `,
-    ingradients: ["Bột mì", "Nấm", "Ô liu", "Xúc xích", "Phô mai"],
+    ingradients: ["Bột mì", "Sầu riêng", "Phô mai"],
     amount: 1,
   },
   {
     id: 28,
-    title: "Gà rán cay",
+    title: "Gà rán sốt cay",
     category: "lunch",
     price: 19.99,
-    img: "/images/crispy-chicken.png",
+    img: "/images/Gà rán sốt cay.png",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
     ingradients: ["Bột mì", "Gà", "Bột bắp"],
     amount: 1,
@@ -319,12 +319,12 @@ export const products = [
   },
   {
     id: 30,
-    title: "Gà Rán Phô Mai",
+    title: "Hotdog",
     category: "lunch",
     price: 19.99,
-    img: "/images/chicken-cheese.png",
+    img: "/images/Hotdog.png",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
-    ingradients: ["Gạo", "Gà", "Phô mai"],
+    ingradients: ["bột mì", "Thịt heo", "Phô mai"],
     amount: 1,
   },
 ];
@@ -357,7 +357,7 @@ export const navLinks = [
   },
   {
     id: 3,
-    path: "/foodList",
+    path: "/foods",
     text: "Sản phẩm",
   },
   {

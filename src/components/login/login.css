@@ -56,6 +56,13 @@
   color: var(--clr-black);
   margin: 1.2rem 0;
   text-transform: capitalize;
+  display:flex;
+  align-items: center;
+ 
+}
+.icon-auth{
+  font-size:1.4rem;
+  margin-right:0.4rem;
 }
 .form-label.lblCheckbox{
   font-size:1.2rem;
@@ -65,7 +72,8 @@
 .login-input {
   padding: 1rem 1.2rem;
   outline: none;
-  border-radius: var(--radius);
+  border-radius: 1rem;
+  border:0.02rem solid rgb(149, 136, 136);
 }
 .form-btn {
   margin-top: 1.8rem;

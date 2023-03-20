@@ -50,27 +50,28 @@ function FoodList() {
           {foods.map((food) => {
             const { id, img, title, price, category } = food;
             return (
-              <article key={id} className="col l-4 m-6 c-12" style={{marginTop:'3.2rem'}}>
-               
-                  <div className="food">
+              <article
+                key={id}
+                className="col l-4 m-6 c-12"
+                style={{ marginTop: "3.2rem" }}
+              >
+                <div className="food">
                   <Link to={`/product/${id}`}>
                     <img src={img} className="food-img" alt={title} />
-                    </Link>
-                    <div className="food-info">
-                      <div className="food-description">
-                        <h1 className="food-title">{title}</h1>
-                        <p className="food-category">{category}</p>
-                        <p className="food-price">{price}$</p>
-                      </div>
-                      <div className="food-footer">
-                        <Link to={`/product/${id}`} className="food-btn">
-                          Xem chi tiết
-                        </Link>
-                      </div>
+                  </Link>
+                  <div className="food-info">
+                    <div className="food-description">
+                      <h1 className="food-title">{title}</h1>
+                      <p className="food-category">{category}</p>
+                      <p className="food-price">{price}$</p>
                     </div>
-                    
+                    <div className="food-footer">
+                      <Link to={`/product/${id}`} className="food-btn">
+                        Xem chi tiết
+                      </Link>
+                    </div>
                   </div>
-              
+                </div>
               </article>
             );
           })}

@@ -18,7 +18,7 @@ const initCart = {
 };
 const AppProvider = ({ children }) => {
   const [data, setData] = useState(products);
-  const [testData,setTestData] = useState([]);
+  const [testData, setTestData] = useState([]);
   // categories
   const allCategories = [
     "all",
@@ -33,16 +33,15 @@ const AppProvider = ({ children }) => {
     const newItems = products.filter((item) => item.category === category);
     setData(newItems);
   };
-  const fetchData = async()=>{
-    try{
+  const fetchData = async () => {
+    try {
       const res = await fetch(url);
       const data1 = await res.json();
       setTestData(data1);
+    } catch (err) {
+      console.log("error");
     }
-    catch(err){
-      console.log("error")
-    }
-  }
+  };
   // useEffect(()=>{
   //   fetchData();
   // },[])
@@ -68,6 +67,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "GET_TOTALS" });
   }, [state.cartList]);
   //form
+  const [isLogin, setIsLogin] = useState(false);
   const [openFormLogin, setOpenFormLogin] = useState(false);
 
   return (
@@ -79,6 +79,8 @@ const AppProvider = ({ children }) => {
         openFormLogin,
         filterCategory,
         setOpenFormLogin,
+        isLogin,
+        setIsLogin,
         openCart,
         setOpenCart,
         ...state,
@@ -86,7 +88,7 @@ const AppProvider = ({ children }) => {
         remove,
         toggleAmount,
         clearAll,
-        testData
+        testData,
       }}
     >
       {children}

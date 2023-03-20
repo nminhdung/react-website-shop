@@ -27,6 +27,7 @@ function Login() {
           </div>
           <div className="form-group">
             <label htmlFor="username" className="form-label">
+            <i className="fas fa-user icon-auth"></i>
               Username
             </label>
             <input
@@ -39,6 +40,7 @@ function Login() {
 
           <div className="form-group">
             <label htmlFor="password" className="form-label">
+            <i className="fas fa-key icon-auth"></i>
               Password
             </label>
             <input

@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import {navLinks} from "../../data";
+import { navLinks } from "../../data";
 import "./navbar.css";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 const logo = "/images/logo.png";
 function Navbar() {
-  const { setOpenFormLogin,setOpenCart,amount } = useGlobalContext();
-  
+  const { setOpenFormLogin, setOpenCart, isLogin, setIsLogin, amount } =
+    useGlobalContext();
 
   //menu mobile
   const [showLinks, setShowLinks] = useState(false);
@@ -20,7 +20,7 @@ function Navbar() {
     const refCartHeight = refCart.current.getBoundingClientRect().height;
     if (showLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px `;
-      navRight.current.style.height = `${refCartHeight}px`;
+      navRight.current.style.height = `${refCartHeight+10}px`;
     } else {
       linksContainerRef.current.style.height = "0px";
       navRight.current.style.height = "0px";
@@ -48,33 +48,43 @@ function Navbar() {
           </div>
           <div className="links-contaner" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
-              {navLinks.map((item)=>{
+              {navLinks.map((item) => {
                 return (
                   <li key={item.id}>
-                <Link to={item.path} className="link-item">
-                  {" "}
-                  {item.text}
-                </Link>
-              </li>
-                )        
+                    <Link to={item.path} className="link-item">
+                      {" "}
+                      {item.text}
+                    </Link>
+                  </li>
+                );
               })}
-           
-            
             </ul>
           </div>
           <div className="nav-right" ref={navRight}>
-            <div className="cart" ref={refCart} onClick={()=>setOpenCart(true)}>
-              <i className="fas fa-shopping-cart cart-icon" ></i>
+            <div
+              className="cart"
+              ref={refCart}
+              onClick={() => setOpenCart(true)}
+            >
+              <i className="fas fa-shopping-cart cart-icon"></i>
               <div className="amount-container">
                 <p className="total-amount">{amount}</p>
               </div>
             </div>
-            <button
-              className="btn-login"
-              onClick={() => setOpenFormLogin(true)}
-            >
-              Đăng Nhập
-            </button>
+            {(isLogin && (
+              <div className="user-container">
+                <img className="user-login-img" src="/images/logo1.png" />
+             
+                <button className="btn-login">Đăng xuất</button>
+              </div>
+            )) || (
+              <button
+                className="btn-login"
+                onClick={() => setOpenFormLogin(true)}
+              >
+                Đăng Nhập
+              </button>
+            )}
           </div>
           {/* <div className="social-links">
             <ul className="list-social">

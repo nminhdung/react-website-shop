@@ -81,6 +81,22 @@ nav {
   box-shadow: inset 10.6rem 0 0 var(--clr-primary-2);
   color: var(--clr-white);
 }
+.user-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-login-img{
+  width:5rem;
+  height:5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right:0.2rem;
+}
+/* .user-login-text{
+  font-size:1.8rem;
+
+} */
 /* .cart {
   display: none;
 } */
@@ -179,6 +195,8 @@ nav {
     display: block;
     margin-left: 1.4rem;
   }
+ 
+
 
   .list-social {
     display: flex;

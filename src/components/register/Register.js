@@ -13,6 +13,7 @@ function Register({ typeForm, setTypeForm, setOpenFormLogin }) {
       </div>
       <div className="form-group">
         <label htmlFor="username" className="form-label">
+        <i className="fas fa-user icon-auth"></i>
           Username
         </label>
         <input
@@ -24,6 +25,7 @@ function Register({ typeForm, setTypeForm, setOpenFormLogin }) {
       </div>
       <div className="form-group">
         <label htmlFor="Email" className="form-label">
+        <i className="fas fa-envelope icon-auth"></i>
           Email
         </label>
         <input
@@ -35,6 +37,7 @@ function Register({ typeForm, setTypeForm, setOpenFormLogin }) {
       </div>
       <div className="form-group">
         <label htmlFor="password" className="form-label">
+        <i className="fas fa-key icon-auth"></i>
           Password
         </label>
         <input
@@ -47,6 +50,7 @@ function Register({ typeForm, setTypeForm, setOpenFormLogin }) {
 
       <div className="form-group">
         <label htmlFor="confirmPassword" className="form-label">
+        <i className="fas fa-check-circle icon-auth"></i>
           Confirm Password
         </label>
         <input

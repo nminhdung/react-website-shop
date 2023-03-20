@@ -3,8 +3,8 @@
   --clr-black: #222222;
   /*primary*/
   --clr-primary: #c9e52d57;
-  --clr-primary-2:rgb(241, 193, 33);
-  --clr-text:#8c8e8f;
+  --clr-primary-2: rgb(241, 193, 33);
+  --clr-text: #8c8e8f;
   /*grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
@@ -53,18 +53,18 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
 }
-.loading{
-  display:flex;
-  justify-content:center;
+.loading {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size:5rem;
+  font-size: 5rem;
 }
 /*product card*/
 .food {
   background: var(--clr-white);
   width: 100%;
   display: flex;
-  height:100%;
+  height: 100%;
   flex-direction: column;
   box-shadow: var(--light-shadow);
   margin-top: 3.2rem;
@@ -75,11 +75,18 @@ h4 {
 }
 
 .food-img {
-  height: 36rem;
+  height:25rem;
   object-fit: contain;
   width: 100%;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.food-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .food-description {
   margin-top: 1.2rem;
@@ -87,17 +94,14 @@ h4 {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  
-}
-.food-info {
-  padding: 1.2rem;
+  flex: 1;
 }
 .food-title {
   font-size: 1.8rem;
   text-transform: capitalize;
   color: var(--clr-black);
   letter-spacing: var(--spacing);
-  line-height: 2.2rem
+  line-height: 2.2rem;
 }
 .food-price {
   color: var(--clr-primary-2);
@@ -109,11 +113,11 @@ h4 {
   letter-spacing: var(--spacing);
   font-weight: 600;
   color: var(--clr-black);
-  margin:0.8rem 0;
+  margin: 0.8rem 0;
 }
-.food-footer{
-  flex-shrink:0;
-  margin-top:auto;
+.food-footer {
+  flex-shrink: 0;
+  margin-top: auto;
 }
 .food-btn {
   background: var(--clr-primary-2);

@@ -4,15 +4,16 @@ import { useGlobalContext } from "../../context";
 import "./productdetail.css";
 import { Link } from "react-router-dom";
 function ProductDetail() {
-  const { data,addCart } = useGlobalContext();
+  const { data, addCart } = useGlobalContext();
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [singleItem, setSingleItem] = useState(null);
+  const item = data.find((item) => item.id == id);
 
   useEffect(() => {
     setLoading(false);
-    const item = data.find((item) => item.id == id);
     setSingleItem(item);
+    window.scrollTo(0, 0);
   }, [id]);
 
   if (loading) {
@@ -21,8 +22,9 @@ function ProductDetail() {
   if (singleItem) {
     const { img, title, price, desc, ingradients, amount, category } =
       singleItem;
+   
     const productOthers = data
-      .filter((item) => item.category === category && item.id!=id )
+      .filter((item) => item.category === category && item.id !== id)
       .slice(0, 4);
 
     return (
@@ -44,21 +46,46 @@ function ProductDetail() {
                 </div>
                 <div className="product-ingradients">
                   <p className="ingradients-title">Thành phần:</p>
-                  <p className="ingradients-item">{ingradients.map(item=>item+", ")}</p>
+                  <p className="ingradients-item">
+                    {ingradients.map((item) => item + ", ")}
+                  </p>
                 </div>
                 <div className="product-detail-amount">
                   <p className="product-detail-amount-title">Số lượng</p>
-                  <i className="fas fa-minus amount-icon" onClick={(e)=>setSingleItem({...singleItem,amount:singleItem.amount-1})}></i>
+                  <i
+                    className="fas fa-minus amount-icon"
+                    onClick={(e) =>
+                      setSingleItem({
+                        ...singleItem,
+                        amount: singleItem.amount - 1,
+                      })
+                    }
+                  ></i>
                   <input
                     type="number"
                     value={amount}
-                    onChange={(e) => setSingleItem({...singleItem,amount:e.target.value})}
+                    onChange={(e) =>
+                      setSingleItem({ ...singleItem, amount: e.target.value })
+                    }
                     className="product-detail-input"
                   />
-                  <i className="fas fa-plus amount-icon" onClick={(e)=>setSingleItem({...singleItem,amount:singleItem.amount+1})}></i>
+                  <i
+                    className="fas fa-plus amount-icon"
+                    onClick={(e) =>
+                      setSingleItem({
+                        ...singleItem,
+                        amount: singleItem.amount + 1,
+                      })
+                    }
+                  ></i>
                 </div>
                 <div className="product-detail-btn">
-                  <a className="btn-addcart" onClick={()=>addCart(singleItem)}>Thêm vào giỏ hàng</a>
+                  <a
+                    className="btn-addcart"
+                    onClick={() => addCart(singleItem)}
+                  >
+                    Thêm vào giỏ hàng
+                  </a>
                   <a className="btn-addcart">Mua ngay</a>
                 </div>
               </div>
